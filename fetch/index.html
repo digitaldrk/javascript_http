@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Fetch :)</h1>
+	<div id="get-fetch-helper-function-button" class="cool-button">GET with fetch helper function</div>
+	<div id="post-fetch-helper-function-button" class="cool-button">POST with fetch helper function</div>
+	<ul id="ajax-get-list"></ul>
+	<p id="post-response-result"></p>
+
+	<script src="script.js"></script>
+	<script>
+		fetchGetHelperFunctionButton = document.querySelector('#get-fetch-helper-function-button');
+		fetchPostHelperFunctionButton = document.querySelector('#post-fetch-helper-function-button');
+		ajaxGetList = document.querySelector('#ajax-get-list');
+
+		fetchGetHelperFunctionButton.addEventListener('click', buildGetList);
+		fetchPostHelperFunctionButton.addEventListener('click', sendDataFetch);
+	</script>
+</body>
+</html>
